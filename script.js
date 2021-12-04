@@ -45,4 +45,31 @@ let sumFunction = function(num1, num2) {
   }
   console.log(arrayAdder([10, 20, 10]));
   
-  
+//Prompt 5. Function that returns a square of that number
+
+function squareNumber (number) {
+  return number * number;
+}
+
+console.log(squareNumber(7));
+
+//Prompt 6. Function that returns whether number in argument is odd or even
+
+function oddOrEven (number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } 
+  return "Odd";
+}
+
+//Prompt 7. Function that returns sum of positive numbers in an array
+
+function sumPositiveArray (array) {
+  let sumOfArray = 0;
+  for (let i = 0; i < array.length; i++){
+    if (array[i] >= 0) {
+      sumOfArray += array[i];
+    }
+  }
+  return sumOfArray;
+}
